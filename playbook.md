@@ -153,6 +153,23 @@ At the end of the sprint we have a retrospective. During a retrospective, we dis
 Keep this short and link to the many useful things on the interwebs.
 
 
+### Technical principles
+
+#### Do the smallest amount of good work
+The act of shipping a simple and readable story to live is more valuable than a perfectly engineered solution that ultimately takes too long to ship and has more complexity.
+
+#### Talk little and often
+Whether you're starting a new story or find yourself solving unexpected problems, make time to have lots of short conversations about them. Mulling these situations over with an opposite can often half the problem and increase collective knowledge.
+
+#### Own your code
+
+#### Ask for help
+The 20 minute rule. Start the clock when you are first stuck. After 20 minutes, rubber duck. If no progress, ask a fleshy human.
+
+#### Don't labour the point
+If it's not important, don't labour the point. Measure how many fucks you each give. Have strong opinions, weakly held.
+
+
 ### Development
 To start any new piece of work - whether story, bug fix, or chore - you should always start by creating a new branch from the `master` branch of the main repository on Github. (If the main repository is not yet on Github, [move it there](https://github.com/dxw/playbook/blob/master/guides/moving-a-repo-to-github.md)).
 
