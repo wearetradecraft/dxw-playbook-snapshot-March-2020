@@ -84,7 +84,7 @@ This playbook is a collaborative effort. If you spot something that's wrong, fee
 
 If you are making a substantial change (perhaps following a team conversation) please make it in a branch and submit a pull request. Then ask someone else who was in the conversation to review and merge it. When we review a pull request on the playbook, we check that it accurately captures the conversation, that it doesn't contain anything private, and that it's well written and free of typos, incorrect speelings and other minor errors.
 
-## Build
+## Building software
 
 ### The structure of a project
 We structure projects into the phases that are described by the [GDS Service Manual](https://www.gov.uk/service-manual): discovery, alpha, beta, live and retirement. It's worth having a browse of the service manual if you're not familiar with it, as it is the main guide for how digital work in the public sector should be done.
@@ -505,11 +505,11 @@ The delivery manager you assign the ticket to will then treat it as a [lead](#le
 
 ### Typical projects
 
-We make most of our money by researching, designing and building web sites and apps. These are always for public sector organisations. Broadly speaking, they are either informational services ([corporate websites](https://www.judiciary.gov.uk), [campaigns](https://www.greatbusiness.gov.uk), intranets) or transactional services ([making payments, bookings, reporting things](https://www.youtube.com/watch?v=NN5B9rL_Hxs)). Sometimes they're a bit of both.
+We make most of our money by researching, designing and building digital services on the web. These are always for public sector organisations. Broadly speaking, they are either informational services ([corporate websites](https://www.judiciary.gov.uk), [campaigns](https://www.greatbusiness.gov.uk), intranets) or transactional services ([making payments, bookings, reporting things](https://www.youtube.com/watch?v=NN5B9rL_Hxs)). Sometimes they're a bit of both.
 
-In so doing, we try to make sure that the organisations we're working with will be able to operate their new services well and sustainably. This sometimes involves work that an agency might not normally do, like advising an organisation's leaders on how their teams could be restructured, or on what their digital strategy could be.
+In so doing, we try to make sure that the organisations we're working with will be able to operate their new services well and sustainably. This sometimes involves work that an agency might not normally do, like advising an organisation's leaders on how their teams could be restructured, or on what their digital strategy should be.
 
-More directly, we earn money by scheduling people to work on solving problems, finding things out, or building things. We charge for this work by the day, and sell it in batches of days. Everyone is billed at the same day rate.
+More directly, we earn money by scheduling people to work on solving problems, finding things out, or building things. We charge for this work by the day, and sell it in batches of days.
 
 We also make some of our money by hosting some of the services that we build, and by selling subscription-based products that are related to the rest of our work.
 
