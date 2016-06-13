@@ -538,7 +538,7 @@ To do this, we:
 * Make sure the work that they need is something we can do
 * Check that we'd be able to complete the work in time for whatever deadlines they have
 
-When we mark a deal as Qualfied, we update the summary to ensure that it accurately reflects the client's user needs and vision.
+When we change a lead's status to Qualfied, we update the summary to ensure that it accurately reflects the client's user needs and vision.
 
 ### Budgets
 
@@ -584,6 +584,8 @@ If we're writing a proposal following our own format, you'll have a proposal tem
 * A rough timeline for when the sprints and other work will happen.
 
 There are lots of examples of these proposals that anyone can read if they like.
+
+After we have sent a proposal or tender response, we change the lead's stage to Awaiting Result.
 
 
 ### The shape of a good project
