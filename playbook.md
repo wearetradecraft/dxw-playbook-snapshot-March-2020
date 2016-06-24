@@ -562,11 +562,11 @@ The delivery manager you assign the ticket to will then treat it as a [lead](#le
 
 ### Typical projects
 
-We make most of our money by researching, designing and building web sites and apps. These are always for public sector organisations. Broadly speaking, they are either informational services ([corporate websites](https://www.judiciary.gov.uk), [campaigns](https://www.greatbusiness.gov.uk), intranets) or transactional services ([making payments, bookings, reporting things](https://www.youtube.com/watch?v=NN5B9rL_Hxs)). Sometimes they're a bit of both.
+We make most of our money by researching, designing and building digital services for public sector organisations. Broadly speaking, they are either transactional services ([making payments, bookings, reporting things](https://www.youtube.com/watch?v=NN5B9rL_Hxs)) or informational services ([corporate websites](https://www.judiciary.gov.uk), [campaigns](https://www.greatbusiness.gov.uk), intranets). Sometimes they're a bit of both.
 
-In so doing, we try to make sure that the organisations we're working with will be able to operate their new services well and sustainably. This sometimes involves work that an agency might not normally do, like advising an organisation's leaders on how their teams could be restructured, or on what their digital strategy could be.
+In so doing, we try to make sure that the organisations we're working with will be able to operate their new services well and sustainably. This sometimes involves work that an agency might not normally do, like advising an organisation's leaders on how their teams could be restructured, or on their digital strategy.
 
-More directly, we earn money by scheduling people to work on solving problems, finding things out, or building things. We charge for this work by the day, and sell it in batches of days. Everyone is billed at the same day rate.
+More directly, we earn money by scheduling people to work on solving problems, finding things out, or building things. We charge for this work by the day, and sell it in batches of days. In most cases, everyone is billed at the same day rate.
 
 We also make some of our money by hosting some of the services that we build, and by selling subscription-based products that are related to the rest of our work.
 
@@ -579,7 +579,7 @@ When any lead arrives, we record it in [Pipeline Deals](https://www.pipelinedeal
 
 We record as much information as we can about leads when they arrive. A lead should always be described in enough detail that someone else in the team could pick it up and work on it if needs be. That means that we always record a sensible name, the details of the organisation and the contact information of the person we're talking to. If they have provided any documents, we upload those into PipelineDeals as well.
 
-Leads go through several stages during their life, to show whether we're waiting for more information, waiting for a meeting, writing a proposal and so on.
+Leads go through several stages during their life, to show whether we're waiting for more information, waiting for a meeting, writing a proposal and so on. We record notes to the lead every time something happens, i.e. a phone call, email or meeting. 
 
 When the process ends, a lead will either be [won](#winning_work) or [lost](#losing_work).
 
@@ -595,7 +595,7 @@ To do this, we:
 * Make sure the work that they need is something we can do
 * Check that we'd be able to complete the work in time for whatever deadlines they have
 
-When we mark a deal as Qualfied, we update the summary to ensure that it accurately reflects the client's user needs and vision.
+When we mark a deal as Qualified, we update the summary to ensure that it accurately reflects the client's user needs and vision.
 
 ### Budgets
 
@@ -605,7 +605,7 @@ Where we don't think we could do what the client needs within their budget, we e
 
 Where clients have a larger budget than we think they need, we say that too. This usually means explaining why we're able to do the work for less than they thought. We also think about what extra things we could do to improve their chances of success, and suggest extra work they could do.
 
-Where a budget is disclosed that's more than we think is necessary, we usually propose a peice of work that uses that budget fully. But we're always open, and tell them that we've done this, and that we'd be delivering more than the minimum. And we're always happy to win a smaller bit of work than the client thought they'd need. We try to structure these proposals so that the extra work is easy to remove.
+Where a budget is disclosed that's more than we think is necessary, we usually propose a piece of work that uses that budget fully. But we're always open, and tell them that we've done this, and that we'd be delivering more than the minimum. And we're always happy to win a smaller bit of work than the client thought they'd need. We try to structure these proposals so that the extra work is easy to remove.
 
 
 ### Sales meetings
@@ -629,7 +629,7 @@ It's important that we use this meeting to find out the information that we need
 
 ### Proposals and tenders
 
-If the project is being tendered via a fixed process (like the Digital Services Framework) we'll respond by filling in a form that the client provides. These forms are not all the same, and the questions vary. If you're involved in this, have a good conversation with someone who's done it before first.
+If the project is being tendered via a fixed process (like the Digital Outcomes and Specialists Framework) we'll respond by filling in a form that the client provides. These forms are not all the same, and the questions vary. If you're involved in this, have a good conversation with someone who's done it before first.
 
 If we're writing a proposal following our own format, you'll have a proposal template to start from. The main things you'll need to write are:
 
@@ -656,7 +656,7 @@ There aren't any strict rules about what projects we take on, except that the ul
 
 ### Winning work
 
-When we win work, we mark it as Won in PipelineDeals. We amend the budget, closing date and services sold if necessary. We write to the client to thank them and ask them for a convenient time to meet and start the work. We create invoices in Xero and save them as drafts, so we don't foget to bill them. And we add the project's sprints and other work to Forecast, so that the team can see who's working on what.
+When we win work, we mark it as Won in PipelineDeals. We amend the budget, closing date and services sold if necessary. We write to the client to thank them and ask them for a convenient time to meet and start the work. We create invoices in Xero and save them as drafts, so we don't forget to bill them. And we add the project's sprints and other work to Forecast, so that the team can see who's working on what.
 
 
 ### Losing work
@@ -666,7 +666,7 @@ When we lose work, we mark it as Lost in PipelineDeals. We write to the client t
 
 ### Administration
 
-There's quite a lot of work involved in given sale, as it moves through the stages of the pipeline. To help manage this, we have tasks in Pipeline Deals that are automatically created when leads' statuses change. We can all do things to help this process flow smoothly. Some of us are responsible for particular tasks, which it's important to complete on time. Others will just be in a position to help when they notice an incorrect field, a missing contact or a missing file. We always correct these things when we can.
+There's quite a lot of work involved in a given sale, as it moves through the stages of the pipeline. To help manage this, we have tasks in Pipeline Deals that are automatically created when leads' statuses change. We can all do things to help this process flow smoothly. Some of us are responsible for particular tasks, which it's important to complete on time. Others will just be in a position to help when they notice an incorrect field, a missing contact or a missing file. We always correct these things when we can.
 
 
 ## Recruitment
