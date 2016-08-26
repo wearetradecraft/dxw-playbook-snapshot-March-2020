@@ -12,14 +12,14 @@ We use Pipeline Deals to record information about:
 We store this information so that:
 
 * We keep track of sales leads and make sure we act on them all
-* We keep track of the reasons why we do not win projects
+* We keep track of the reasons why we do not win work
 * We can efficiently allocate sales and administration work to people in the team
 * We know what all of our current contracts are, who they are for and what service we're providing
 * We know when our contracts will end
 * We know who in a client organisation we should speak to if we need something
 * We can provide Management Information to the Crown Commercial Service
 
-We use PipelineDeals because it gives us a lot of flexibility to define fields for storing data, can easily import and export data, has a good api and features that allow us to automate common tasks.
+We use PipelineDeals because it gives us a lot of flexibility to define fields for storing data, can easily import and export data, has a complete api and features that allow us to automate common tasks.
 
 ## Principles
 
