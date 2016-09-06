@@ -830,14 +830,10 @@ We manage expenses using Xero. For more information about how to do this, see th
 
 
 ### Calendars and documents
+We use Google Apps for Work to manage calendars, write and share documents. There is a dxw folder where we share most of the things we write. If you can't see it when you log in to Google Drive, you'll need to ask someone else to send you the link, and then click "Add to drive".
 
-### Accounting and legal
+When we write new things, we try to save them in a sensible folder within the existing structure.
 
-#### Cashflow
-
-#### Payroll
-
-#### CCS management information
 
 ### Projects and contacts
 
