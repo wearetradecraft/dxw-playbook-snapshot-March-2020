@@ -17,11 +17,13 @@ The web has revolutionised the way society works. Most of society has reaped the
 
 Since dxw was founded in 2008, a lot of things have become better. The Government Digital Service has changed the conversation about how and why services get built, and many are much better as a result. But the challenge facing the public sector is not one that any organisation could tackle alone.
 
-In addition to talented in-house teams who understand how to deliver great services, the public sector needs talented suppliers who understand how to work with it. And who are driven by a desire to make public services better. And who understand how to combine a modern technogical approach with agile principles of development and user-centricity. That's what dxw is here to do.
+In addition to capable in-house teams who understand how to deliver great services, the public sector needs capable suppliers who understand how to work with it. And who are driven by a desire to make public services better. And who understand how to combine a modern technological approach with agile principles of development and user-centricity. That's what dxw is here to do.
 
 We build digital public services that are flexible, efficient, effective and useful. We want people's experience of those services to be straightforward, positive and seamless. We believe that in building those services using agile principles, we can help government to embed those same principles in other parts of their organisations.
 
 Ultimately, we want to help the public sector to spend less on technology so that it can spend more on education, healthcare, policing and welfare. We believe that it is possible to use technology and agile principles to help government become something recognisably, radically better: and we want to help make it happen.
+
+dxw helps public sector teams to make good technology decisions and build better services.
 
 ### Values
 We think that it's very important to have a talented team if we're going to succeed. But just as important as raw talent is our ability to work well together. These are the values that we aspire to, and help each other to achieve.
@@ -35,8 +37,8 @@ We are honest, trustworthy and straightforward. We give plain-spoken, frank, acc
 #### Positive
 We are positive, cheerful and supportive. Even in crisis, we stay optimistic. We [assume good faith](https://en.wikipedia.org/wiki/Wikipedia:Assume_good_faith) and offer constructive challenge.
 
-#### Creative
-We are creative, diverse and curious. We help each other to learn and improve and we're sensitive to each others' needs. We love technology and finding new ways to solve problems.
+#### Curious
+We are curious, diverse and creative. We help each other to learn and improve and we're sensitive to each others' needs. We love technology and finding new ways to solve problems.
 
 #### Determined
 We are determined, discerning and motivated. We believe in high standards, we enjoy doing things properly, and we're loath to settle for less.
@@ -76,7 +78,7 @@ However, there are some things that we must keep private.
 ### Time
 Our working hours are 10:00-18:00, Monday to Friday. Some people work different hours by arrangement. Anyone is free to do that as long as their hours of work don't make it hard for other people to get things done. For example, many people arrive earlier than 10:00 and leave earlier, which is generally fine.
 
-We have a short stand-up every morning, where we each tell the whole team about a single thing we will get done that day. The stand-up is at 10:00. If you miss the stand-up, then you are [late](#lateness).
+We have a short stand-up every morning, where we each tell the whole team about a single thing we will get done that day. The stand-up is at 10:00. If you miss the stand-up, then you are late.
 
 Most developers have maintenance responsibilities, which they do during [ticket time](#ticket-time).
 
@@ -144,7 +146,7 @@ Not all clients have the willingness or resources to be able to commission resea
 We don't only do research in discovery phases. We do our best to ensure that research is built into projects at every stage.
 
 
-### Sprinting
+### Development sprints
 We build services in sprints, which are fixed-length periods of delivery work with a particular team.
 
 At dxw, sprints start with a planning session and end with two retrospective sessions: one internal, and one with the client. Both sessions involve all members of the project team (developers, user researcher, and delivery manager) and the product owner from the client side. Sometimes, retros include more of the client team.
@@ -157,13 +159,30 @@ At the end of the sprint we have a retrospective. During a retrospective, we dis
 
 
 #### Stories
-* Principles of good stories - independent, small, etc
-* As a so that I can
-* ACs
+We document development work that needs to be completed using [user stories](https://www.gov.uk/service-manual/agile/writing-user-stories.html). .
 
-Keep this short and link to the many useful things on the interwebs.
+A user story is a succinct explanation of some work that will be done in order to meet the needs of a particular kind of user. They are usually structured into a sentence, of the form:
+
+> As a [kind of user], so that I can [meet a need], I want [a feature in the product]
+
+Breaking everything down into user stories allows us to be confident that everything we develop is responding to [user needs](https://www.gov.uk/service-manual/user-centred-design/user-needs.html). By using this story format, we directly associate a feature we're building with the group of users who want it and the needs that they have.
+
+We keep lists of stories in a tracking tool. For most projects, this is Pivotal Tracker. These tools usually require a title for the story. We use the story itself to make the title, by rearranging it to reflect the new state of the system after the work is complete. For example:
+
+> As an administrator, so that I can ensure I don't publish defamatory comments, I want to be able to review and approve comments before they are shown.
+
+Might have a title of:
+
+> Administrators can review and approve comments before they are shown
+
+Each story will also contain a list of acceptance criteria. Acceptance criteria are a collection of statements about the functionality of the service which must be true in order for the story to be considered "done".
+
+For more information about writing good stories, read User Stories Applied by Mike Cohn. There is a copy of this book in the dxw library.
+
 
 #### Lifecycle of a story
+<!-- TODO: This section should be an explanation of what happens to a story as it is worked on, focussing on "why" rather than "how" and explaining the philosophy. -->
+
 There are several states that a story has to go through in order to be deployed to production. We use tracking tools and physical story boards to keep track of which stage a given story is in.
 
 * **Started**: A developer has started working on the story, making changes to the product to ensure that each acceptance criterion is met
@@ -173,111 +192,36 @@ There are several states that a story has to go through in order to be deployed 
 * **Ready to deploy**: The client has accepted the story and it's ready to deploy
 * **Deployed**: The story is deployed to production
 
-#### Branching
-When we start any new piece of work - whether story, bug fix, or chore - we always start by creating a new branch based off the repository's `develop` branch.
 
-We have a naming convention for branches, as follows:
+### Managing delivery
+>"The delivery manager sets the team up for successful delivery. Remove obstacles, or blockers to progress, constantly helping the team become more self organising. They enable the work a team does rather than impose how it’s done."
+>
+>-- <cite>[Government Digital Service](https://www.gov.uk/service-manual/the-team/delivery-manager.html)</cite>
 
-* `feature/{STORY ID}-{CONCISE TITLE}`: A branch that adds a new feature, as defined by the specified story
-* `fix/{STORY/TICKET ID}-{CONCISE TITLE}`: A branch that corrects a problem in a feature already merged into develop
-* `hotfix/{CONCISE TITLE}`: A branch that adds an urgent fix to a problem that affects production. These branches are based on master and do not go via develop, so must be also be merged into develop when deployed.
-* `chore/{CONCISE TITLE}`: Chore branches are used for routine tasks or tickets which are not emergencies.
+At dxw, delivery managers ensure that sprints go smoothly and that the team remain productive. They are generally the client's first and main point of contact, and are responsible for ensuring that we deliver good work.
 
-Examples:
+Throughout a sprint, delivery managers ensure that agreed process is followed, organising and facilitating discussions as required. They run sprint planning and retrospective sessions. They run daily standups with the dxw and client teams to keep everyone informed and to discuss and resolve any blockers.
 
-```
-feature/523797477-add-logging-to-registration
-fix/523797477-logging-happens-in-both-environments
-hotfix/remove-breaking-change-to-repair-creation
-chore/reduce-caching-for-contact-details
-```
+Outside these session and standups, they will maintain regular communication with the client and the delivery team to respond quickly to challenges as they arise. If priorities change during a sprint, the delivery manager will work with the client to understand and plan for the impact of the change.
 
-#### Committing
-We write commit messages that convey in the present tense what the new state of the system will be. There is no strict character limit for this but we try to keep them under 50 characters.
+#### Sprint planning
+Sprints begin with a planning session, where the full team (dxw and the client) review and prioritise the stories in the backlog. Working together, we discuss the stories that we are prioritising for the current sprint, ensuring that they are [well-formed](#stories) and understood by the full team.
 
-To help focus our commits into smaller well-bounded chunks, we prepend the following for each type of commit.
+Often, this involves adding and updating stories, but we try to avoid this becoming the main purpose of the meeting. In our experience, sprint planning is much more useful when the [stories are written in advance](#backlog-grooming).
 
-* `(feature):`: when we are adding something new
-* `(fix):`: when we are fixing something existing
-* `(refactor):`: when we are changing the implementation of something existing without changing its behaviour
-* `(chore):`: catch all for when none of the above apply and there is no immediate user need eg. gem/package updates
+By the end of this session, the full team should be confident that there is enough work to occupy the sprint, and that everyone fully understands what's needed.
 
-As well as writing a commit message, we also write a commit description. This should focus on the reasons for the change.
+#### Daily standups
 
-It's really important to write this down and record it as we go. As a services goes through the development process, we make many decisions about how to build it, each focusing on the delivery of the next most important feature. These decisions are based on the best current understanding and a set of assumptions, there weill sometimes be short term compromises made to ensure we're able to continuously deliver.
+TODO
 
-Recording what these are is extremely helpful to enable anybody working on the project now and in the future to make informed decisions by reading the commit history.
+#### Retrospectives
+At the end of every sprint, the delivery manager facilitates a [retrospective](https://www.gov.uk/service-manual/agile/running-retrospectives.html) where the team can discuss how the sprint went. These sessions are attended by all the people involved in delivering the sprint along with the client team.
 
-```
-# Poor
-Fixed the form
+During the session we talk about the things that did and didn't go well, we then agree actions to improve the delivery of future work.
 
-# Great
-(fix): Food order form works with special characters
-
-* Previously the form failed to send if the starter value included any of the following characters: !@£$%^&*().:;'
-* Users should be able to use these characters and after a short investigation I found this new bug in PHP: <link>
-* As a short term workaround until the bug is fixed I am stripping out any of these characters if they are present.
-```
-
-#### Code style
-We write our code in a consistent way to ensure it is well-structured and easy to follow for the rest of the team. Similar to the guidelines laid out in [Thoughtbot’s style guide](https://playbook.thoughtbot.com/#style-guide), approach this guidance as a way to code on present and future projects, not something to retroactively add to existing projects. When working on existing projects or joining a project, make sure to follow the code style that is already in place.
-
-While it can be tempting to write a new style guide, it's not a worthwhile investment of time. It's important that a consistent style is adopted, but mostly unimportant which specific style it is. So rather than having our own, we have chosen the following existing style guides for our work:
-
-* PHP - [PSR-2](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md)
-* Ruby - [Ruby community style guide](https://github.com/bbatsov/ruby-style-guide)
-* Sass - [Sass Guidelines - Syntax and formatting](http://sass-guidelin.es/#syntax--formatting)
-* JavaScript - [Standard](http://standardjs.com/)
-
-
-#### Pull requests
-When we have finished a piece of work on a branch, we [make a pull request](https://help.github.com/articles/using-pull-requests/) using the project's GitHub/GitLab page.
-
-We prefix pull request titles with the Story ID to make it easy to find the story and the acceptance criteria that should be met.
-
-A good pull request should:
-
-* Be created by the authoring developer
-* Meet all of the acceptance criteria on the associated story
-* Focus on the single problem at hand. Including other changes will make it much harder to merge
-* Include appropriate detail to assist the reviewer as much as possible
-
-```
-# Poor
-A new registration form and fix a bug with contacts
-
-# Great
-[123456789] New users can now register for an account
-```
-
-#### Code reviews
-We believe that Code reviews are important. They help us to learn from each other, to maintain consistency in the code we write, and to ensure we push well-reasoned and bug-free code to production. When performing a code review, we make sure that:
-
-* We cannot see any code that could give rise to a security vulnerability
-* The story has been implemented clearly and maintainably
-* The code contains well-written commits that help us to understand the changes
-* The code follows [code style guides](#code-style)
-
-It is not important that a story be implemented exactly how you would have done it. Only that it meets the criteria above. When we find problems, we generally give feedback to the developer who implemented the story, not fix things ourselves. It is ok to fix minor problems -- like typos -- but if we're not sure whether to fix something ourselves, we err towards making no changes, and instead giving feedback to the authoring developer.
-
-It's also important that code reviews have a constructive, amicable tone. To this end, we bear in mind the [Thoughtbot code review guide](https://github.com/thoughtbot/guides/tree/master/code-review), which contains good rules for keeping things positive and useful.
-
-#### Deploying
-We maintain two environments for deployments, `testing` and `production`. Deployments to `testing` should be done throughout the sprint as our work becomes ready for a client to review.
-
-When we deploy to production will depend on the project and the client. Some clients prefer features to be deployed to production as soon as they’re signed off, while others like to deploy everything at the end of the sprint. A discussion about which approach is preferable should happen early in every project.
-
-On WordPress projects, we [deploy by pushing commits](https://github.com/dxw/playbook/blob/master/guides/deploying.md) to the `testing` or `production` branch on GovPress. Other projects have their own approaches, which are documented in their READMEs.
-
-
-#### Managing delivery
-
-* planning and retros (DM perspective)
-* keeping devs productive
-* unblocking and sensibleness
-* stakeholders
-* backlog grooming
+#### Backlog grooming
+At regular intervals (often at the end of retrospective sessions) the team will look through the sprint backlog to reprioritise and update stories, based on things we've learned during delivery and from user research. Stories that are no longer needed can be deleted, stories that may be needed later can be moved to the icebox and all other stories should be reprioritised for future sprints.
 
 
 ## Products
@@ -368,9 +312,11 @@ All tickets that arrive on the helpdesk go through a number of stages in the cou
 
 When a new ticket arrives, it is automatically assigned to the Front-line Support group. All agents in this group receive an email to alert them.
 
-If you are in the Front-line Support group, it's important that you keep an eye on the helpdesk so that you know when new tickets arrive. It's your responsibility to review tickets as they arrive, and decide what to do with them. If you can deal with the issue, or if you can complete an [initial investigation](#initial-investigation) into the problem, do so.
+The Font-line Support group is monitored by whoever in operations is on call. It's their responsibility to review tickets as they arrive, and decide what to do with them. If they can deal with the issue, or if can complete an [initial investigation](#initial-investigation) into the problem, they do so.
 
-If you're ultimately unable to solve the ticket, assign it to someone in the Escalated Support group. Try to choose the person you think will be best placed to solve the issue. This will usually be someone who is currently sprinting on the project, or who has worked on it in the past. If you're not sure, ask a delivery manager.
+If not, they will assign it to someone in the Developers group. Whenever assigning a ticket, we try to choose the person we think will be best placed to solve the issue. This will usually be someone who is currently sprinting on the project, or who has worked on it in the past. If you're not sure, ask a delivery manager.
+
+As tickets are arriving, we also think about whether they might be related to other tickets that we've already received. For example, if we get several tickets from different clients about similar-sounding issues, that might be indicative of a wider problem. Or, if a single client sends lots of tickets within a short time, it might be wise to assign a delivery manager to oversee them all and ensure that the requests make sense when considered as a group.
 
 
 #### Assignments
@@ -399,6 +345,8 @@ Pending tickets will not appear in the list of tickets or in the views for the F
 
 Tickets which are pending will also be closed automatically after a set period of time if the client does not respond. They will get reminders before this happens. If a pending ticket you are assigned to is closed because the client didn't reply in time, both you and the client will get an email, so you can open it again if you think that's best.
 
+Because pending tickets will be auto-closed if there's no reply, it's also important to check and set the *How much work was this?* field to give an approximatation of the total time the team spent on the issue. Or, select *chargeable* if it's a ticket we'll invoice for.
+
 When assigning a ticket to another agent, we do not set it to pending, otherwise they probably won't see it.
 
 
@@ -414,7 +362,7 @@ It is important that solved tickets contain some record of what we did. This is 
 
 Some tickets are not raised by clients, but are raised by another agent or by an automated process. In this situation, it's still important that tickets record what actions we took, so we don't close them without a good update. We always leave a couple of sentences to say what we did, even if it was minor.
 
-Before solving a ticket, we use the *How much work was this?* field to give an approximatation of the time we spent on the issue, or we select *chargeable* if it's a ticket we'll invoice for.
+Before solving a ticket, we make sure the *How much work was this?* is set to a sensible value.
 
 #### On-hold tickets
 
@@ -809,6 +757,21 @@ Trying to improve things in secret is a missed opportunity to get help from othe
 ### Fearless feedback
 
 ### Compensation
+
+### Benefits
+
+#### Pensions
+
+#### Conference Perk
+We think it's important to cultivate interests outside work, and that investing time in this brings benefits to dxw.
+
+So, in addition to going to conferences relevant to their roles, everyone who works at dxw is able to attend one conference per year about anything that they'd like.
+
+On request, dxw will cover the cost of a conference ticket, travel and accommodation, anywhere in reach of a budget flight.
+
+#### Cycle to work scheme
+
+#### Book purchase
 
 ## Operations
 
