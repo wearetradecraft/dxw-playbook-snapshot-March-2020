@@ -146,27 +146,44 @@ We don't only do research in discovery phases. We do our best to ensure that res
 
 
 ### Development sprints
-We build services in sprints, which are fixed-length periods of delivery work with a particular team.
+We work in sprints, which are fixed-length periods of delivery work with a particular team.
 
-At dxw, sprints start with a planning session and end with two retrospective sessions: one internal, and one with the client. Both sessions involve all members of the project team (developers, user researcher, and delivery manager) and the product owner from the client side. Sometimes, retros include more of the client team.
-
-The sprint planning session is used to decide which stories will be worked on during the upcoming sprint, and to ensure that they are [well-formed](#stories). During this session, developers estimate the effort required to finish each story. Once estimated, stories are prioritised by the client and put into the backlog for the sprint. Developers should also advise at this point if there are any dependencies the client should be aware of.
-
-Design and development is worked on in parallel during the sprint. Because we design in browser and avoid separating development and user experience work, it's important when giving stories points to think both about the design and the development effort that will be required.
-
-At the end of the sprint we have a retrospective. During a retrospective, we discuss what went well, what didn’t, and what actions should be taken to improve things for the next sprint.
+At dxw, sprints are two weeks long. On the first day of the sprint we facilitate a planning session and at the end of the sprint we finish with a show and tell and retrospective. These sessions involve all members of the development team (developers, designers, user researchers and delivery managers) and the product owner from the client side. Sometimes these sessions include more of the client team.
 
 
-#### Stories
-We document development work that needs to be completed using [user stories](https://www.gov.uk/service-manual/agile/writing-user-stories.html). .
+#### Sprint planning
+Sprints begin with a planning session, where the full team (dxw and the client) review and prioritise the stories in the backlog. Working together, we discuss the stories that we are prioritising for the current sprint, ensuring that they are [well-formed](#stories) and understood by the full team.
+
+Often this involves writing new stories and updating existing ones, but we try to avoid this becoming the main purpose of the meeting. In our experience, sprint planning is much more useful when the [stories are written in advance](#backlog-grooming).
+
+During this session, developers estimate the effort required to finish each story. We always estimate stories based on complexity, not the time we think it will take to finish it.
+
+Design and development is worked on in parallel during a sprint. Because we design in browser and avoid separating development and user experience work, it's important when giving stories points to think both about the design and the development effort that will be required.
+
+Once estimated, stories are prioritised by the client and put into the backlog for the sprint. Developers also advise the rest of the team at this point if there are any dependancies the client should be aware of.
+
+By the end of this session, the full team should be confident about the goal of the sprint and what is being worked on.
+
+#### Daily standups
+
+Every morning the delivery manager facilitates a standup. Standups last 5-10 minutes and is for the developers to discuss what they're working on and whether there are any problems or dependencies. If we're not co-located with a client, these happen over Talky or Google Hangout.
+
+#### Retrospectives
+At the end of every sprint, the delivery manager facilitates a [retrospective](https://www.gov.uk/service-manual/agile/running-retrospectives.html) where the team can discuss how the sprint went. We talk about what went well, what didn't, and what actions should be taken to improve things for the next sprint. These sessions are attended by all the people involved in delivering the sprint along with the client team.
+
+#### Backlog grooming
+At regular intervals the team look through the sprint backlog to reprioritise and update stories, based on things we've learned during delivery and from user research. Stories that are no longer needed are deleted, stories that may be needed later or are blocked move to the icebox and all other stories are reprioritised for future sprints.
+
+#### User stories
+We document development work that needs to be completed by writing [user stories](https://www.gov.uk/service-manual/agile/writing-user-stories.html). .
 
 A user story is a succinct explanation of some work that will be done in order to meet the needs of a particular kind of user. They are usually structured into a sentence, of the form:
 
 > As a [kind of user], so that I can [meet a need], I want [a feature in the product]
 
-Breaking everything down into user stories allows us to be confident that everything we develop is responding to [user needs](https://www.gov.uk/service-manual/user-centred-design/user-needs.html). By using this story format, we directly associate a feature we're building with the group of users who want it and the needs that they have.
+Breaking everything down into user stories allows us to be confident that everything we develop is meeting [user needs](https://www.gov.uk/service-manual/user-centred-design/user-needs.html). By using this story format, we directly associate a feature or piece of functionality we're building with the group of users who want it and the needs that they have.
 
-We keep lists of stories in a tracking tool. For most projects, this is Pivotal Tracker. These tools usually require a title for the story. We use the story itself to make the title, by rearranging it to reflect the new state of the system after the work is complete. For example:
+We keep lists of stories in Trello. We use user needs to create the title of a story, by rearranging it to reflect the new state of the system after the work is complete. For example:
 
 > As an administrator, so that I can ensure I don't publish defamatory comments, I want to be able to review and approve comments before they are shown.
 
@@ -174,26 +191,26 @@ Might have a title of:
 
 > Administrators can review and approve comments before they are shown
 
-Each story will also contain a list of acceptance criteria. Acceptance criteria are a collection of statements about the functionality of the service which must be true in order for the story to be considered "done".
+Each user story will also contain a list of acceptance criteria. Acceptance criteria are a collection of statements about the functionality of the service which must be true in order for the story to be considered "done".
 
-For more information about writing good stories, read User Stories Applied by Mike Cohn. There is a copy of this book in the dxw library.
+For more information about writing good stories, we recommend reading User Stories Applied by Mike Cohn. There is a copy of this book in the dxw library.
 
 
 #### Lifecycle of a story
 <!-- TODO: This section should be an explanation of what happens to a story as it is worked on, focussing on "why" rather than "how" and explaining the philosophy. -->
 
-There are several states that a story has to go through in order to be deployed to production. We use tracking tools and physical story boards to keep track of which stage a given story is in.
+There are several states that a story has to go through in order to be deployed to production. We use Trello and physical story boards to keep track of which stage a given story is in.
 
-* **Started**: A developer has started working on the story, making changes to the product to ensure that each acceptance criterion is met
-* **Code review**: The first developer has finished their work, and is ready for a second developer to [review](#Code reviews) the technical aspects of the story in a [pull request](#Pull request)
-* **Acceptance review**: The two developers have finished the review and the story is now merged, and ready for the delivery manager to review against its acceptance criteria
-* **Client review**: The delivery manager has confirmed that the story is done, and it's ready for a client to review
-* **Ready to deploy**: The client has accepted the story and it's ready to deploy
-* **Deployed**: The story is deployed to production
+* **In progress**: A developer has started working on the story, making changes to the product to ensure that each acceptance criterion is met
+* **Awaiting review**: The developer has finished the story and is ready for a second developer to [review](#Code reviews) the technical aspects of the story in a [pull request](#Pull request)
+* **Code review**: The story is being reviewed by the second developer who leaves feedback if the pull request is not ready to be merged and needs further work
+* **DM/client review**: The two developers have finished the review and the story is now merged and pushed to staging. It is ready for a delivery manager and the client to review against its acceptance criteria
+* **Accepted**: The client has accepted the story and it's ready to deploy to production
+* **Done**: The story is deployed to production
 
 
 ### Managing delivery
->"The delivery manager sets the team up for successful delivery. Remove obstacles, or blockers to progress, constantly helping the team become more self organising. They enable the work a team does rather than impose how it’s done."
+>"The delivery manager sets the team up for successful delivery. They remove obstacles, or blockers to progress, constantly helping the team become more self organising. They enable the work a team does rather than impose how it’s done."
 >
 >-- <cite>[Government Digital Service](https://www.gov.uk/service-manual/the-team/delivery-manager.html)</cite>
 
@@ -201,26 +218,7 @@ At dxw, delivery managers ensure that sprints go smoothly and that the team rema
 
 Throughout a sprint, delivery managers ensure that agreed process is followed, organising and facilitating discussions as required. They run sprint planning and retrospective sessions. They run daily standups with the dxw and client teams to keep everyone informed and to discuss and resolve any blockers.
 
-Outside these session and standups, they will maintain regular communication with the client and the delivery team to respond quickly to challenges as they arise. If priorities change during a sprint, the delivery manager will work with the client to understand and plan for the impact of the change.
-
-#### Sprint planning
-Sprints begin with a planning session, where the full team (dxw and the client) review and prioritise the stories in the backlog. Working together, we discuss the stories that we are prioritising for the current sprint, ensuring that they are [well-formed](#stories) and understood by the full team.
-
-Often, this involves adding and updating stories, but we try to avoid this becoming the main purpose of the meeting. In our experience, sprint planning is much more useful when the [stories are written in advance](#backlog-grooming).
-
-By the end of this session, the full team should be confident that there is enough work to occupy the sprint, and that everyone fully understands what's needed.
-
-#### Daily standups
-
-TODO
-
-#### Retrospectives
-At the end of every sprint, the delivery manager facilitates a [retrospective](https://www.gov.uk/service-manual/agile/running-retrospectives.html) where the team can discuss how the sprint went. These sessions are attended by all the people involved in delivering the sprint along with the client team.
-
-During the session we talk about the things that did and didn't go well, we then agree actions to improve the delivery of future work.
-
-#### Backlog grooming
-At regular intervals (often at the end of retrospective sessions) the team will look through the sprint backlog to reprioritise and update stories, based on things we've learned during delivery and from user research. Stories that are no longer needed can be deleted, stories that may be needed later can be moved to the icebox and all other stories should be reprioritised for future sprints.
+Outside of these session and standups, they maintain regular communication with the client and the delivery team to respond quickly to challenges as they arise. If priorities change during a sprint, the delivery manager works with the client to understand and plan for the impact of the change.
 
 
 ## Products
@@ -263,10 +261,8 @@ If a client asks us to do something in person, on the phone or via email, we pol
 
 For these reasons, we do not do any work at all on a client site unless we are on a sprint or working on a relevant ticket. This is really important.
 
-### Ticket time
-We work on tickets every day. Developers get 1.5-2 hours per day to work on their tickets. This applies every day, including when we're working on sprints. This is reflected in the cost of our sprints - they are 10 days long, but we only charge for 8.
-
-If you don't have any tickets of your own to do, see if you can take one over from someone else in the team, or pick up a new one. There is almost always something to do.
+### Support sprints
+We work on tickets by having a developer on a support sprint. Developers are assigned to support for two weeks at a time and work on tickets for the duration of the sprint. If there is a ticket they need another developer to help with, this work is scheduled for a Friday.
 
 ### Client experience (AKA: ticket principles)
 
@@ -292,7 +288,7 @@ In general:
 * We are personable, friendly and helpful
 * If things look like they're going to get difficult, or the client seems unhappy, we are honest, and assume good faith
 * If appropriate, we are apologetic. If we screw something up, we take responsibility and apologise. If the client seems very upset, we let a delivery manager know.
-* If we do become annoyed or frustrated by a ticket, we respond later or reassign it.
+* If we do become annoyed or frustrated by a ticket, we respond later or speak to a DM about reassigning it.
 
 
 #### Don't over-deliver
@@ -311,9 +307,9 @@ All tickets that arrive on the helpdesk go through a number of stages in the cou
 
 When a new ticket arrives, it is automatically assigned to the Front-line Support group. All agents in this group receive an email to alert them.
 
-The Font-line Support group is monitored by whoever in operations is on call. It's their responsibility to review tickets as they arrive, and decide what to do with them. If they can deal with the issue, or if can complete an [initial investigation](#initial-investigation) into the problem, they do so.
+The Front-line Support group is monitored by whoever in operations is on call. It's their responsibility to review tickets as they arrive, and decide what to do with them. If they can deal with the issue, or if can complete an [initial investigation](#initial-investigation) into the problem, they do so.
 
-If not, they will assign it to someone in the Developers group. Whenever assigning a ticket, we try to choose the person we think will be best placed to solve the issue. This will usually be someone who is currently sprinting on the project, or who has worked on it in the past. If you're not sure, ask a delivery manager.
+If not, they will assign it to the developer on support. Sometimes tickets are assigned to a delivery manager if it looks like chargeable work or requires a conversation with the client.
 
 As tickets are arriving, we also think about whether they might be related to other tickets that we've already received. For example, if we get several tickets from different clients about similar-sounding issues, that might be indicative of a wider problem. Or, if a single client sends lots of tickets within a short time, it might be wise to assign a delivery manager to oversee them all and ensure that the requests make sense when considered as a group.
 
@@ -752,7 +748,7 @@ There is more information about dxw's holiday arrangements in your contract of e
 
 
 ### Sickness
-If you are sick, you must let us know as soon by 10:00, or as soon as is reasonably practical. Do not come to the office. If you come to the office when sick, you may be sent home again.
+If you are sick, you must let us know by 10:00, or as soon as is reasonably practical. Do not come to the office. If you come to the office when sick, you may be sent home again.
 
 If you're sick but able to work, you can work from home. Everyone at dxw should have a laptop, and should generally take it home with them in case it's needed. If you're sick and at home but don't have your laptop, it can be couriered to you.
 
@@ -972,6 +968,20 @@ The most important thing to remember is that you'll leave the best impression - 
 
 
 ### Blog
+At dxw, we all write blog posts regularly.
+
+We blog because want to share what we're doing and what we're learning about tech and government with the digital community. When we're hiring, we also want potential new staff to be able to to get to know us a bit beforehand. Writing introductory blog posts and following up with communicating about the work we do helps people gauge what kind of team we are. We also work in the open and are keen to share our knowledge, express our values and get people thinking about how to improve services for the public sector. One of the ways we do this is by encouraging feedback as much as honing our own views on certain topics.
+
+We collect ideas for blog posts on a Trello board, where they can be discussed before being written. Often, we'll pick up ideas from this board on Fridays and spend our dxw time writing.
+
+The process for writing a new post is:
+
+- Write the post and save in Google drive
+- Have peers review your post and suggest changes (if required)
+- When you're happy with the post, ask Harry to sign it off
+- Send the post to CommsCrowd to see if they might want to pitch it to publications
+- When ready, add the post to WordPress as a draft and agree a publication time with the team
+- Write a tweet to promote your post and add it to Buffer, scheduled to go out when the post is public
 
 ### Twitter
 
