@@ -628,7 +628,7 @@ There's quite a lot of work involved in given sale, as it moves through the stag
 ### Basics
 We use [Workable](https://dxw.workable.com) for recruitment, to help us stay organised and keep in touch with candidates.
 
-Each candidate moves through a number of stages before being offered a job or declined: a screening interview via skype, an interview and a work day. The work day includes another interview.
+Each candidate moves through a number of stages before being offered a job or declined: a screening interview via skype or phone, an interview and a work day. The work day includes another interview.
 
 We feel strongly that it's important to be respectful of candidates time and interest in us, and that their attention is valuable. So we do our best to be responsive, human and open. It's particularly important to give unsuccessful candidates good, thorough feedback about why we haven't made them an offer.
 
@@ -653,8 +653,8 @@ All applications arrive via Workable. We review these applications as a team to 
 
 An application review is a very quick process. We look at the information given by the candidate and decide if it is likely that the applicant has the skills, experience and personal qualities that we need. If it is likely, we progress them to the next stage.
 
-### Skype screen
-The purpose of the Skype screen is to:
+### Screening
+The purpose of the screening is to:
 
 1. Introduce ourselves and explain a little more about the job and life at dxw
 2. Talk to the candidate about their experience and explore why they are interested in the job
@@ -681,7 +681,7 @@ We avoid making any commitments during this call. Near the end, we explain that 
 After the call, you can talk about the candidate with the team if you wish, or just make a decision. If you think it's quite likely that they have the skills, experience and personal qualities that we need, you should take them through to an interview.
 
 ### Interviews
-Candidates who have a successful skype screen will be offered an interview. This is an hour long with two members of the team.
+Candidates who have a successful screen will be offered an interview. This is an hour long with two members of the team.
 
 Before going to an interview, make sure you have:
 
@@ -736,6 +736,10 @@ Most developers have maintenance responsibilities, which they do during [ticket 
 
 We do our very best to work to a [sustainable pace](#sustainable-pace). But sometimes, when we're approaching a firm deadline or a launch, or a client is having an emergency, we work longer hours than normal. From time to time, there's an emergency that means we have to work during unsociable hours to solve the problem. Neither of these happen very often, but they are a normal part of life at dxw.
 
+### Remuneration
+dxw will institute a cost of living rise each year from April 2017. The percentage will be set by the CPI Index (https://www.ons.gov.uk/economy/inflationandpriceindices) as of 1st April each year and you will receive your raise in the April payroll.
+
+For any other salary queries, please speak to Harry.
 
 ### Holiday
 We use BreatheHR to manage holiday requests.
