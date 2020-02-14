@@ -2295,7 +2295,7 @@ At dxw, we all write blog posts regularly.
 
 We blog because want to share what we're doing and what we're learning about
 tech and government with the digital community. When we're hiring, we also want
-potential new staff to be able to to get to know us a bit beforehand. Writing
+potential new staff to be able to get to know us a bit beforehand. Writing
 introductory blog posts and following up with communicating about the work we do
 helps people gauge what kind of team we are. We also work in the open and are
 keen to share our knowledge, express our values and get people thinking about
